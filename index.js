@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () =>{
     const cardForm = document.getElementById('cardForm');
     const modal = document.getElementById('modal');
     const certificateContent = document.getElementById('certificateContent');
@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Hide the modal initially
     modal.style.display = 'none';
   
-    cardForm.addEventListener('submit', function (e) {
+    cardForm.addEventListener('submit', (e)=> {
       e.preventDefault();
   
       // 🚨 Get input values

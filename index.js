@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModal = document.querySelector(".close");
 
   // Hide the modal initially
-  modal.style.display = "block";
+  modal.style.display = "none";
 
   cardForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -25,8 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 🚨 Generate certificate content dynamically
-    certificateContent = `
+    certificateContent.innerHTML = `
+    <h1>Certified Achievement</h1>
+    <p>This is to certify that</p>
     <h3>${studentName}</h3>
+    <p>has almost completed the</p>
+    <h3>${courseName}</h3>
+    <p>with legendary perseverance and world-class bad-assery for never giving up 🏆</p>
+    <img src="/logo.png" alt="CodeSpace Logo" id="codespaceImage">
+    <p>${personalMessage} 😍.💪.</p>
   `;
 
     //  Display the modal

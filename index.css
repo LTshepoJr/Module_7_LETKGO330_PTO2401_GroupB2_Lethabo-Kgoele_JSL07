@@ -109,6 +109,9 @@ h1,
 .close {
   color: #dc7f5f;
 }
+.close:hover {
+  cursor: pointer;
+}
 
 /* Adding a fancy border to the certificate content */
 #certificateContent {
@@ -124,6 +127,7 @@ button {
 
 button:hover {
   background-color: #5d5f5e;
+  cursor: pointer;
 }
 
 #codespaceImage {
